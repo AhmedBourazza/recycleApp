@@ -1,0 +1,18 @@
+<!-- myapp/templates/myapp/simple_form.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Simple</title>
+</head>
+<body>
+    <h1>Formulaire d'Entrée</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
